@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Interactive Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="app" id="app" aria-label="Kalkulator Modern">
+        <div class="shine" aria-hidden="true"></div>
+
+        <header class="toolbar" aria-label="Toolbar">
+            <div class="brand" aria-hidden="true">
+                <span class="dot"></span>
+                <span>Calc • NeoUI</span>
+            </div>
+            <div class="controls">
+                <button id="theme" class="switch" role="switch" aria-checked="false"
+                    aria-label="Ganti tema terang/gelap">
+                    <span class="knob" aria-hidden="true"></span>
+                </button>
+            </div>
+        </header>
+
+        <section class="display" aria-live="polite" aria-atomic="true">
+            <div class="expression" id="exp">&nbsp;</div>
+            <div class="result" id="res">
+                <span id="out">0</span>
+            </div>
+        </section>
+
+        <section class="grid" role="group" aria-label="Tombol kalkulator">
+            <button class="btn util" data-key="clear" title="Bersihkan">C</button>
+            <button class="btn util" data-key="neg" title="Ubah tanda">±</button>
+            <button class="btn util" data-key="percent" title="Persen">%</button>
+            <button class="btn op" data-op="/" title="Bagi">÷</button>
+
+            <button class="btn" data-num="7">7</button>
+            <button class="btn" data-num="8">8</button>
+            <button class="btn" data-num="9">9</button>
+            <button class="btn op" data-op="*" title="Kali">×</button>
+
+            <button class="btn" data-num="4">4</button>
+            <button class="btn" data-num="5">5</button>
+            <button class="btn" data-num="6">6</button>
+            <button class="btn op" data-op="-" title="Kurang">−</button>
+
+            <button class="btn" data-num="1">1</button>
+            <button class="btn" data-num="2">2</button>
+            <button class="btn" data-num="3">3</button>
+            <button class="btn op" data-op="+" title="Tambah">+</button>
+
+            <button class="btn danger" data-key="del" title="Hapus satu">DEL</button>
+            <button class="btn" data-num="0">0</button>
+            <button class="btn" data-key="dot">.</button>
+            <button class="btn primary" data-key="equal" title="Sama dengan">=</button>
+        </section>
+
+    </main>
+</body>
+
+</html>
