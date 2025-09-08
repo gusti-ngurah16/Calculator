@@ -247,7 +247,6 @@ body {
     transition: opacity .35s ease;
 }
 
-/* Skeleton sparkles */
 .shine {
     position: absolute;
     inset: 0;
