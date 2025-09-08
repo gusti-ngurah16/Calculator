@@ -8,16 +8,16 @@
     const themeSwitch = document.getElementById('theme')
 
     const state = {
-        a: null,      // first operand
-        b: null,      // second operand (typed)
-        op: null,     // '+', '-', '*', '/'
-        overwrite: true, // when true, next number replaces output
+        a: null,      
+        b: null,      
+        op: null,     
+        overwrite: true, 
     }
 
     const fmt = (n) => {
         if (!isFinite(n)) return 'Error'
         const s = Number(n)
-        // Avoid long float tails
+        
         let str = s.toLocaleString(undefined, {
             maximumFractionDigits: 10,
         })
@@ -60,7 +60,7 @@
             return
         }
         if (digit === '.' && current.includes('.')) return
-        if (current.replace('-', '').length >= 16) return // limit length
+        if (current.replace('-', '').length >= 16) return 
         setOutput(current + digit)
     }
 
@@ -108,7 +108,7 @@
         setOutput(fmt(-n))
     }
 
-    // Events: click
+   
     app.addEventListener('click', (e) => {
         const t = e.target.closest('.btn')
         if (!t) return
@@ -124,7 +124,7 @@
         if (key === 'dot') return inputNum('.')
     })
 
-    // Keyboard support
+    
     const keymap = {
         '+': () => chooseOp('+'),
         '-': () => chooseOp('-'),

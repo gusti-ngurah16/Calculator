@@ -17,7 +17,6 @@
     --ring: 0 0 0 3px rgba(124, 92, 255, .35);
 }
 
-/* Light theme */
 .theme--light {
     --bg: #f7f7fb;
     --bg-soft: rgba(0, 0, 0, .04);
@@ -233,7 +232,6 @@ body {
     grid-column: span 2;
 }
 
-/* Ripple */
 .btn::after {
     content: "";
     position: absolute;
@@ -274,7 +272,6 @@ body {
     }
 }
 
-/* Accessibility prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation: none !important;
